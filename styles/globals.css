@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-[#33333380] py-1 px-8 text-lg font-semibold text-white transition-all duration-200 hover:bg-[#e6e6e6] hover:text-black;
+  }
+
+  .scrollBtn {
+    @apply z-20 h-9 w-9 transform cursor-pointer text-[#e6e6e6] transition duration-150 ease-out hover:scale-125 hover:text-white;
+  }
+
+  .nfBtn {
+    @apply rounded-sm bg-red-500 p-2 font-semibold outline-none hover:bg-red-600;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-[#111] !scrollbar-thin scrollbar-track-transparent !scrollbar-thumb-red-500;
+  }
+
+  button {
+    @apply disabled:cursor-not-allowed;
+  }
+}
