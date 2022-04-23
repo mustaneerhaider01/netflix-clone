@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import { useState } from 'react'
 import Image from 'next/image'
 import Auth from '../components/Auth'
-import { User } from 'firebase/auth'
 
 const Login: NextPage = () => {
   const [signIn, setSignIn] = useState<boolean>(false)

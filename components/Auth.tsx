@@ -18,7 +18,7 @@ interface FormInputs {
   password: string
 }
 
-const Auth: React.FC = ({}) => {
+const Auth: React.FC = () => {
   const {
     register: registerField,
     handleSubmit,

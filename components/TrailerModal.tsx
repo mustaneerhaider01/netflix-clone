@@ -23,7 +23,13 @@ const TrailerModal: React.FC = () => {
       const trailerIndex = data.results.findIndex(
         (res: Element) => res.type === 'Trailer'
       )
-      setTrailer(data.results[trailerIndex].key)
+
+      if (trailerIndex !== -1) {
+        setTrailer(data.results[trailerIndex].key)
+      } else {
+        setIsOpen(false)
+        setMovie(null)
+      }
     }
 
     fetchMovie()
