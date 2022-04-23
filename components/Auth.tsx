@@ -54,7 +54,7 @@ const Auth: React.FC = () => {
       <Toaster />
       <div className="min-w-[300px] bg-black/75 py-10 px-12 md:min-w-[400px]">
         <h1 className="mb-3 text-left text-2xl font-semibold">Sign in</h1>
-        <form onSubmit={handleSubmit(submitHandler)}>
+        <form id="auth-form" onSubmit={handleSubmit(submitHandler)}>
           <div className="mb-3 flex flex-col ">
             <input
               {...registerField('email', { required: true })}
